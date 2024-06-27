@@ -1,0 +1,16 @@
+.hp-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh; /* Establece la altura del contenedor como el 100% de la altura de la ventana gráfica */
+}
+
+.home-im {
+    margin-top: auto; /* Utiliza margen automático para alinear la imagen en la parte inferior del contenedor */
+    margin-bottom: auto;
+    width: auto; /* Permite que el ancho de la imagen se ajuste automáticamente */
+    max-height: 100%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+}

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Hanson';
+    src: url('/font/hanson-bold/Hanson-Bold.otf') format('opentype'),
+         url('/font/hanson-bold/Hanson-Bold.ttf') format('truetype');
+}
+
+.nb-navbar {
+    z-index: 1000;
+    width: 100%;    
+    position: fixed;
+    padding: 30px 5vw 24px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:space-between;
+    background-color: #fff;
+}
+
+.nb-logo-text {
+    font-family: Hanson, sans-serif;
+    color: #888;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.nb-logo-text:hover {
+    color: #333;
+}
+
+.nb-block-menu {
+    display: flex;
+}
+
+.nb-menu-items {
+    align-items: center;
+    color: #333;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nb-menu-play {
+    width: 156px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #666;
+    border-radius: 100px;
+    padding: 10px 40px;
+    font-weight: 500;
+    text-decoration: none;
+}

@@ -1,0 +1,47 @@
+.py-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.py-title {
+    font-size: 3rem;
+    color: #9a8d8d;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.py-container {
+    display: flex;
+    gap: 75px;
+}
+
+.py-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.py-card img {
+    width: 100%;
+    height: auto;
+}
+
+.py-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.8);
+}

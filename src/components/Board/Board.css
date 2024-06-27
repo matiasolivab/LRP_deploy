@@ -1,0 +1,138 @@
+.bo-board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.bo-button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: rgb(156, 2, 2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bo-board-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+}
+
+.bo-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 40px 0px 40px;
+    transform: rotateX(35deg);
+    transform-origin: top bottom;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bo-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bo-cell {
+    position: relative;
+    width: 60px; 
+    height: 60px; 
+    border: 1.5px solid #888; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bo-empty-cell {
+    background-color: #989797; 
+    position: relative;
+    width: 60px;
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bo-center {
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #989797;
+}
+
+.bo-pawn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 70px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.bo-player-im {
+    width: 110%;
+    height: 'auto';
+    margin: 5%; 
+    border: none; 
+    background: none;
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px rgba(250, 250, 250, 250))
+            drop-shadow(0 0 10px rgba(250, 250, 250, 250))
+            drop-shadow(0 0 15px rgba(250, 250, 250, 250));
+}
+
+.bo-home-im {
+    position: absolute;
+    width: 60px;
+    height: 60px; 
+    border: 1.5px solid #888;
+}
+
+.bo-left-players, .bo-right-players {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.bo-properties {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.bo-property-im {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5))
+            drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+}

@@ -1,0 +1,79 @@
+.rm-container-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+}
+
+.rm-container-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.rm-title {
+    font-size: 3rem;
+    color: #888;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.rm-error {
+    font-size: 1.2rem;
+    color: #ff0000;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.rm-players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 50%;
+}
+
+.rm-btns-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin: 20px 0;
+
+}
+.rm-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.rm-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/*
+@media (max-width: 768px) {  
+    .rm-players {
+        flex-direction: column;
+    }
+
+    .rm-player-room {
+        margin: 20px 0;
+    }
+} */

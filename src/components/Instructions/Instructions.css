@@ -1,0 +1,29 @@
+
+.ins-container {
+    margin-top: 80px;
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px; 
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.ins-container > * {
+    margin-bottom: 20px; 
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+}

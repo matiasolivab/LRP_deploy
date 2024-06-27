@@ -1,0 +1,49 @@
+.cr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.cr-container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #081828;
+    flex-direction: column;
+    width: 550px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.cr-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.cr-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.cr-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cr-submit-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}

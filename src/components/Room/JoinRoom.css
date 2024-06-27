@@ -1,0 +1,85 @@
+.jr-join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    width: 100%;
+}
+
+.jr-join-container h1 {
+    font-size: 2rem;
+    color: #9a8d8d;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.jr-rooms-header {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+}
+
+.jr-rooms-header .jr-column-header {
+    flex: 1;
+    text-align: center;
+}
+
+.jr-rooms-header p {
+    font-size: 1.0rem;
+    color: #9a8d8d;
+    text-transform: uppercase;
+    text-align: center;
+}
+.jr-rooms-container {
+    width: 100%;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.jr-room-card {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+    margin: 9px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.jr-room-card .jr-column {
+    flex: 1;
+    text-align: center;
+}
+
+.jr-room-card h3 {
+    font-size: 0.9rem;
+}
+
+.jr-room-card p {
+    font-size: 0.8rem;
+}
+
+.jr-room-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.jr-error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 30px;
+}
