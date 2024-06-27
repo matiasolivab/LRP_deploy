@@ -38,7 +38,7 @@ export function Instructions(){
                     <li><span className="highlight">Asalto:</span> Pierdes vida y boings.</li>
                     <li><span className="highlight">Hospital:</span> Pagar 150 boings para curarte.</li>
                     <li><span className="highlight">Casino:</span> Apostar vida o boings.</li>
-                    <li><span className="highlight">Punto de Inicio:</span> Cada vuelta, ganas 75 boings.</li>
+                    <li><span className="highlight">Punto de Inicio:</span> Cada vuelta, ganas 100 boings.</li>
                 </ul>
             </ul>
             
@@ -74,7 +74,7 @@ export function Instructions(){
                     <li><span className="highlight">Propiedades:</span> Pueden comprarlas y construir defensas.</li>
                     <li><span className="highlight">Casillas de acción:</span> Sacar cartas con efectos variados.</li>
                 </ul>
-                <li><span className="highlight">Pasar Esquinas:</span> Ganas 25 boings al pasar por el resto de esquinas.</li>
+                <li><span className="highlight">Pasar Esquinas:</span> Ganas 50 boings al pasar por el resto de esquinas.</li>
             </ul>
             
             <h3>Final del Juego</h3>

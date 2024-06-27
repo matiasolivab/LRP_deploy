@@ -4,7 +4,6 @@ const buyDefense = async ({
     currentPlayer,
     gameId,
     token,
-    socket,
     defense,
     
     }) => {

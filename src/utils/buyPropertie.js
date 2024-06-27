@@ -4,7 +4,6 @@ const buyPropertie = async ({
   currentPlayer,
   gameId,
   token,
-  socket,
   boardPositions,
 
 }) => {

@@ -9,7 +9,6 @@ const movePawn = async ({
   gameId,
   token,
   socket,
-  boardPositions,
   setboardPositions,
 }) => {
     const dice1 = Math.floor(Math.random() * 6) + 1;

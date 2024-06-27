@@ -9,6 +9,7 @@ const useGame = ({ gameId, socket }) => {
   const [turnOrder, setTurnOrder] = useState([]);
   const [token, setToken] = useState('');
   const [propertiesInfo, setPropertieInfo] = useState('');
+  const [Deadplayers, setDeadPlayers] = useState([]);
 
   const updateGameState = useCallback(async () => {
     const authToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
@@ -35,12 +36,22 @@ const useGame = ({ gameId, socket }) => {
         }
         );
 
+      const response3 = await axios.get(
+        `${import.meta.env.VITE_BACK_URL}/game/checkDeadPlayers/${gameId}`,
+        {
+            headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+            },
+        }
+        );
       const playerData = response.data.players.find(player => player.userId === Number(jwtDecode(authToken).sub));
       setCurrentPlayer(playerData);
       setPlayers(response.data.players);
       setTurnOrder(response.data.playOrder);
       setTurnPlayer(response.data.currentTurn);
       setPropertieInfo(response2.data.squares);
+      setDeadPlayers(response3.data.result);
     } catch (error) {
       console.error('Error al obtener los datos del juego:', error);
     }
@@ -76,7 +87,7 @@ const useGame = ({ gameId, socket }) => {
     }
   };
 
-  return { players, currentPlayer, turnPlayer, setTurnPlayer, turnOrder, token, firstRoll, updateGameState, propertiesInfo };
+  return { players, currentPlayer, turnPlayer, setTurnPlayer, turnOrder, token, firstRoll, updateGameState, propertiesInfo, Deadplayers };
 };
 
 export default useGame;
