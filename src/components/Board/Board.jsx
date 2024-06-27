@@ -129,7 +129,7 @@ const [winnerDeclared, setWinnerDeclared] = useState(false);
     gameId,
     token
     });
-    useCellAction({gameId, currentPlayer, token, socket, setIsNotificationVisible, setNotificationMessage, setCanThrowDice});
+    useCellAction({gameId, currentPlayer, turnOrder, token, socket, setIsNotificationVisible, setNotificationMessage, setCanThrowDice});
 
   const closeBuyPropertieAlert = () => {
     setisBuyPropertieAlert(false);
